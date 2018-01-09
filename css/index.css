@@ -7,6 +7,7 @@
 /* 橘色 */
 /* 白色 */
 /* 渐变背景色*/
+/* 宽高 */
 /* 定位 */
 /* 公共样式 */
 * {
@@ -64,7 +65,7 @@ body {
 }
 /* 绳子和x-m */
 .szBox {
-  height: 174px;
+  height: 160px;
   width: 100%;
   position: relative;
   top: 160px;
@@ -76,22 +77,22 @@ body {
   position: relative;
 }
 .szBox .image2 {
-  width: 100%;
+  width: 45%;
+  position: absolute;
+  top: 86px;
+  bottom: -20px;
+}
+.szBox .image3 {
+  width: 50%;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+}
+.szBox .image4 {
+  width: 50%;
   display: block;
   margin: 0 auto;
   position: relative;
-  top: -200px;
-}
-/* 人 */
-.rBox {
-  height: auto;
-  width: 40%;
-  position: relative;
-  margin: 0 auto;
-}
-.rBox .image1 {
-  width: 100%;
-  display: block;
-  margin: 0 auto;
-  position: relative;
+  top: -220px;
+  left: -5%;
 }
