@@ -1,0 +1,81 @@
+@charset "utf-8";
+@import "common";
+
+/* 公共样式 */
+.reset();
+
+html,body{
+	height: 100%;
+	width:100%;
+	background-color: @bg-color;
+}
+
+.swiper-container{
+	width: 100%;
+	height:100%;
+}
+
+.pageBGImg(){
+	background-image: url("../image/BG.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.wangBGImg(){
+	background-image: url("../image/bgts2.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+/* 页面背景图样式 */
+.pageBG{
+	width: 100%;
+	height: 100%;
+	.pageBGImg();
+}
+
+/* 铁丝网背景样式 */
+.wangBG{
+	width: 100%;
+	height: 100%;
+	.wangBGImg();
+}
+
+.colorBG{
+	width: 100%;
+	height: 100%;
+	.radialGradient();
+}
+
+/* 绳子和x-m */
+.szBox{
+	height: 174px;
+	width: 100%;
+	.pR();
+	top: 160px;
+	.margin();
+	.image1{
+		display: block;
+		.margin();
+		.pR();
+	}
+	.image2{
+		width: 100%;
+		display: block;
+		.margin();
+		.pR();
+		top: -200px;
+	}
+}
+
+/* 人 */
+.rBox{
+	height: auto;
+	width: 40%;
+	.pR();
+	.margin();
+	.image1{
+		width:100%;
+		display: block;
+		.margin();
+		.pR();
+	}
+}

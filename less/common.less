@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+.reset(){
+	*{
+		margin:0;
+		padding:0;
+		color: #000000;
+	}
+	a{
+		text-decoration: none;
+	}
+	ul,li{
+		list-style: none;
+	}
+	img{
+		border: none;
+	}
+}
+
+/* 居中宽度 */
+@centerWidth:996px;
+/* 行高 */
+@inlineHeight:30px;
+/* 公共字体大小 */
+@ft14:14px;
+/* 公共字体颜色 */
+@ft-color:#E1E1E1;
+/* body背景颜色 */
+@bg-color:#1a1a1a;
+/* 橘色 */
+@orange:#fe5e26;
+/* 白色 */
+@white:#ffffff;
+/* 渐变背景色*/
+@rbg1:5%;
+@rbg2:50%;
+@rbg3:80%;
+.radialGradient(){
+  background: -webkit-radial-gradient(transparent @rbg1, transparent @rbg2, @bg-color @rbg3); /* Safari 5.1 - 6.0 */
+  background: -o-radial-gradient(transparent @rbg1, transparent @rbg2, @bg-color @rbg3); /* Opera 11.6 - 12.0 */
+  background: -moz-radial-gradient(transparent @rbg1, transparent @rbg2, @bg-color @rbg3); /* Firefox 3.6 - 15 */
+  background: radial-gradient(transparent @rbg1, transparent @rbg2, @bg-color @rbg3); /* 标准的语法 */
+}
+
+.margin(){
+	margin:0 auto;
+} 
+.of_hidden(){
+	overflow:hidden;
+}
+//浮动
+.fl(){
+	float: left;
+}
+.fr(){
+	float: right;
+}
+
+//鼠标小手指
+.pointer(){
+	cursor: pointer;
+}
+
+/* 定位 */
+.pA(){
+	position:absolute;
+}
+.pR(){
+	position:relative;
+}
+.pF(){
+	position: fixed;
+}
+
+
+
+
+
+
+
