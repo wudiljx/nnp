@@ -79,20 +79,192 @@ body {
 .szBox .image2 {
   width: 45%;
   position: absolute;
-  top: 86px;
-  bottom: -20px;
+  bottom: -28px;
 }
 .szBox .image3 {
   width: 50%;
   position: absolute;
-  bottom: -20px;
+  bottom: -32px;
   left: 50%;
+}
+.szBox .renImage {
+  position: relative;
+  width: 100%;
 }
 .szBox .image4 {
   width: 50%;
-  display: block;
-  margin: 0 auto;
+  position: absolute;
+  top: -224px;
+  left: 20%;
+}
+.szBox .image5 {
+  position: absolute;
+  top: 188px;
+}
+.szBox .image6 {
+  position: absolute;
+  width: 25%;
+  top: 148px;
+  left: 90px;
+}
+.szBox .image7 {
+  position: absolute;
+  top: 156px;
+  right: 100px;
+}
+.szBox .title_list {
+  width: 200px;
+  position: absolute;
+  right: 200px;
+  top: 240px;
+}
+.szBox .title_list li {
+  color: #ffffff;
+  font-weight: bold;
+}
+.szBox .title_list span {
+  color: #ffffff;
+  font-weight: bold;
+  padding-left: 16px;
+}
+.BEIJING {
+  width: 520px;
+  height: 150px;
   position: relative;
-  top: -220px;
-  left: -5%;
+  bottom: 0;
+  margin: 0 auto;
+  margin-top: 46px;
+}
+.BEIJING h2 {
+  color: #e1e1e1;
+  font-size: 24px;
+  width: 520px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+.BEIJING p {
+  color: #e1e1e1;
+  font-size: 14px;
+  width: 520px;
+  height: 44px;
+  text-align: center;
+}
+.video {
+  padding-top: 170px;
+  height: 300px;
+  position: relative;
+}
+.video .swiper-video {
+  overflow: hidden;
+  color: #fff;
+  height: 100%;
+}
+.video .swiper-slide {
+  color: #fff;
+}
+.video embed {
+  width: 100%;
+  height: 100%;
+}
+.video .tsB {
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  bottom: -50px;
+}
+.tsEnd {
+  padding-top: 170px;
+  height: 430px;
+  width: 90%;
+  position: relative;
+}
+.tsEnd .image8 {
+  position: absolute;
+  top: 220px;
+}
+.tsEnd .image9 {
+  position: absolute;
+  left: 106px;
+  width: 500px;
+}
+.tsEnd .image10 {
+  position: absolute;
+  top: 408px;
+}
+.tsEnd .image11 {
+  position: absolute;
+  top: 222px;
+  left: 1100px;
+  height: 220px;
+}
+.tsEnd .image12 {
+  position: absolute;
+  top: 160px;
+  left: 1030px;
+}
+.tsEnd .image13 {
+  position: absolute;
+  left: 930px;
+  bottom: 88px;
+  width: 230px;
+}
+.tsEnd .pzBox {
+  position: relative;
+}
+.tsEnd .pzBox .image14 {
+  position: absolute;
+  left: 277px;
+  top: 80px;
+  width: 150px;
+}
+.tsEnd .pzBox ul {
+  position: absolute;
+  width: 384px;
+  left: 165px;
+  height: 180px;
+  top: 124px;
+  overflow: hidden;
+}
+.tsEnd .pzBox li {
+  width: 80px;
+  height: 50px;
+  margin: 16px 22px;
+  float: left;
+}
+.tsEnd .pzBox li .image15,
+.tsEnd .pzBox li .image16,
+.tsEnd .pzBox li .image17,
+.tsEnd .pzBox li .image18,
+.tsEnd .pzBox li .image19,
+.tsEnd .pzBox li .image20 {
+  position: absolute;
+  width: 80px;
+  height: 50px;
+}
+.dizhi {
+  position: relative;
+  width: 360px;
+  top: -330px;
+  left: 650px;
+}
+.dizhi p {
+  color: #e1e1e1;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 4px;
+}
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  background-image: url("../image/SCROLL.png");
+  width: 100px;
+  color: #ffffff;
+  top: 80%;
+}
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  background-image: url("../image/SCROLL.png");
+  width: 100px;
+  color: #ffffff;
+  top: 80%;
 }

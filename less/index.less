@@ -60,21 +60,198 @@ html,body{
 	.image2{
 		width:45%;
 		.abs();
-		top:86px;
-		bottom:-20px;
+		bottom:-28px;
 	}
 	.image3{
 		width:50%;
 		.abs();
-		bottom:-20px;
+		bottom:-32px;
 		left:50%;
+	}
+	.renImage{
+		.rel();
+		width: 100%;
 	}
 	.image4{
 		width:50%;
-		display: block;
-		.margin();
-		.rel();
-		top:-220px;
-		left:-5%;
+		.abs();
+		top:-224px;
+		left:20%;
 	}
+	.image5{
+		.abs();
+		top:188px;
+	}
+	.image6{
+		.abs();
+		width: 25%;
+		top: 148px;
+		left:90px;
+	}
+	.image7{
+		.abs();
+		top: 156px;
+		right: 100px;
+	}
+	.title_list{
+		width: 200px;
+	    position: absolute;
+	    right: 200px;
+	    top: 240px;
+	    li{
+		    color: @white;
+		    font-weight: bold;
+	    }
+	    span{
+	    	color: @white;
+		    font-weight: bold;
+		    padding-left: 16px;
+	    }
+	}
+}
+
+// BEIJING
+.BEIJING{
+	width: 520px;
+	height: 150px;
+	.rel();
+	bottom: 0;
+	.margin();
+	margin-top: 46px;
+	h2{
+		color: @ft-color;
+		font-size: @ft14 + 10px;
+		width: 520px;
+		height: 60px;
+		line-height: 60px;
+		text-align: center;
+	}
+	p{
+		color: @ft-color;
+		font-size: @ft14;
+		width: 520px;
+		height: 44px;
+		text-align: center;
+	}
+}
+
+
+// video
+.video{
+	padding-top: 170px;
+	height: 300px;
+	.rel();
+	.swiper-video{
+		overflow: hidden;
+		color: #fff;
+		height: 100%;
+	}
+	.swiper-slide{
+		color: #fff;
+	}
+	embed{
+		width: 100%;
+		height: 100%;
+	}
+	.tsB{
+		width: 100%;
+		.abs();
+		z-index: 10;
+		bottom: -50px;
+	}
+}
+
+
+// 最后一页
+.tsEnd{
+	padding-top: 170px;
+	height: 430px;
+	width: 90%;
+	.rel();
+	.image8{
+		.abs();
+		top: 220px;
+	}
+	.image9{
+		.abs();
+		left: 106px;
+		width: 500px;
+	}
+	.image10{
+		.abs();
+		top: 408px;
+	}
+	.image11{
+		.abs();
+		top: 222px;
+		left: 1100px;
+		height: 220px;
+	}
+	.image12{
+		.abs();
+		top: 160px;
+		left: 1030px;
+	}
+	.image13{
+		.abs();
+		left: 930px;
+		bottom: 88px;
+		width: 230px;
+	}
+	.pzBox{
+		.rel();
+		.image14{
+			.abs();
+			left: 277px;
+		    top: 80px;
+		    width: 150px;
+		}
+		ul{
+			.abs();
+			width: 384px;
+		    left: 165px;
+		    height: 180px;
+		    top: 124px;
+		    overflow: hidden;
+		}
+		li{
+			width: 80px;
+			height: 50px;
+			margin:16px 22px;
+			.fl();
+			.image15,.image16,.image17,.image18,.image19,.image20{
+				.abs();
+				width: 80px;
+				height: 50px;
+			}
+		}
+	}
+}
+// 地址
+.dizhi{
+	.rel();
+	width: 360px;
+	top: -330px;
+	left: 650px;
+	p{
+		color: @ft-color;
+		font-size: @ft14 - 2px;
+		line-height: @ft14 + 10px;
+		letter-spacing:4px;
+
+	}
+}
+
+// 上一页下一页
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+	background-image: url("../image/SCROLL.png");
+	width:100px;
+	color: @white;
+	top: 80%;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+	background-image: url("../image/SCROLL.png");
+	width:100px;
+	color: @white;
+	top: 80%;
 }
