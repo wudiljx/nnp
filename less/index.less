@@ -93,6 +93,12 @@ html,body{
 		top: 156px;
 		right: 100px;
 	}
+	.image23{
+		.abs();
+		top: 220px;
+		width: 620px;
+		right: 0;
+	}
 	.title_list{
 		width: 200px;
 	    position: absolute;
@@ -144,7 +150,7 @@ html,body{
 	.swiper-video{
 		overflow: hidden;
 		color: #fff;
-		height: 100%;
+		// height: 100%;
 	}
 	.swiper-slide{
 		color: #fff;
@@ -159,6 +165,32 @@ html,body{
 		z-index: 10;
 		bottom: -50px;
 	}
+	.playBgBox{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+	}
+	.playBG{
+		position: absolute;
+		background-color: #000;
+		opacity: 0.2;
+	    width: 100%;
+	    height: 100%;
+	}
+	.playBtn{
+		display: block;
+		margin: 0 auto;
+	}
+	.dec_play{
+		background-image: url("image/play.png");
+	}
+	.dec_play::before{
+				display: none;
+	}
+	.dec_play::after{
+		display: none;
+	}
 }
 
 
@@ -167,19 +199,44 @@ html,body{
 	padding-top: 170px;
 	height: 430px;
 	width: 90%;
+	.margin();
 	.rel();
-	.image8{
+	// 绳子方法
+	.szImage(){
 		.abs();
-		top: 220px;
+		background-image: url(../image/ts04.png);
+		background-repeat: repeat-x;
+		height: 40px;
+		width:800px;
+	}
+	@absTop1:220px;
+	@absTop2:424px;
+	@absLeft:370px;
+	@absRight:1000px;
+	.image8{
+		top: @absTop1;
+		.szImage();
+		left: @absLeft;
+	}
+	.image10{
+		top: @absTop2;
+		.szImage();
+		left: @absLeft;
+	}
+	.image21{
+		top: @absTop1;
+		.szImage();
+		right: @absRight;
+	}
+	.image22{
+		top: @absTop2;
+		.szImage();
+		right: @absRight;
 	}
 	.image9{
 		.abs();
 		left: 106px;
 		width: 500px;
-	}
-	.image10{
-		.abs();
-		top: 408px;
 	}
 	.image11{
 		.abs();
@@ -195,7 +252,7 @@ html,body{
 	.image13{
 		.abs();
 		left: 930px;
-		bottom: 88px;
+		bottom: 74px;
 		width: 230px;
 	}
 	.pzBox{
@@ -232,7 +289,7 @@ html,body{
 	.rel();
 	width: 360px;
 	top: -330px;
-	left: 650px;
+	left: 720px;
 	p{
 		color: @ft-color;
 		font-size: @ft14 - 2px;
@@ -255,3 +312,9 @@ html,body{
 	color: @white;
 	top: 80%;
 }
+// 控制起始页箭头显示
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{
+	opacity: 0;
+}
+
+

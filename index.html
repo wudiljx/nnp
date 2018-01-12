@@ -5,8 +5,19 @@
 	<title>2018泥泞跑</title>
 	<link rel="stylesheet" href="http://image.runnar.net/static/common/css/swiper.min.css">
 	<link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/zy.media.min.css">
+    <style>
+        
+    #modelView{background-color:#DDDDDD;z-index:0;opacity:0.7;height: 100%;width: 100%;position: relative;}
+    .playvideo{padding-top: auto;z-index: 9999;position: relative;}
+    .zy_media{z-index: 999999999}
+
+    </style>
 	<script src="http://image.runnar.net/static/common/js/jquery-3.1.1.min.js"></script>
 	<script src="http://image.runnar.net/static/common/js/swiper.min.js"></script>
+    <script src="js/zy.media.min.js"></script>
+    <script src="js/index.js"></script>
+
 </head>
 <body>
 	<div class="swiper-container">
@@ -23,6 +34,7 @@
                                 <img class="image3" src="image/sz07.png" alt="绳子">
                                 <div class="renImage">
                                 	<img class="image6" src="image/BURNING.png" alt="BURNING">
+                                    <img class="image23" src="image/sz05.png" alt="绳子">
                                 	<img class="image4" src="image/ren.png" alt="人">
                                 	<img class="image5" src="image/sz2.png" alt="绳子">
                                 </div>
@@ -63,14 +75,28 @@
 									<div class="videoBG"><!-- <img src="image/play.png" alt="播放"> --></div>
 									<div class="swiper-video">
 								        <div class="swiper-wrapper">
+                                            
 								            <div class="swiper-slide" data-history="1">
-								            	<embed src="https://imgcache.qq.com/tencentvideo_v1/player/TPout.swf?max_age=86400&v=20140714" type="application/x-shockwave-flash"></embed>
+								            	<video poster="https://r1.ykimg.com/05420408584A363C6A0A47047DD24931" data-config="{&quot;mediaTitle&quot;: &quot;测试视频--视频&quot;}" preload="none" style="width:100%; height: 100%;">
+            <source src="http://www.w3cschool.cc/try/demo_source/mov_bbb.mp4" type="video/mp4">
+          您的浏览器不支持HTML5视频
+     </video>
 								            </div>
-								            <div class="swiper-slide" data-history="Slide 2">
-								            	<embed src="https://imgcache.qq.com/tencentvideo_v1/player/TPout.swf?max_age=86400&v=20140714" type="application/x-shockwave-flash"></embed>
+								            <div class="swiper-slide" data-history="Slide 2" style="width: 600px;height: 400px;">
+								            	<video poster="https://r1.ykimg.com/05420408584A363C6A0A47047DD24931" data-config="{&quot;mediaTitle&quot;: &quot;测试视频--视频&quot;}" preload="none" style="width:100%; height: 100%;">
+            <source src="http://www.w3cschool.cc/try/demo_source/mov_bbb.mp4" type="video/mp4">
+          您的浏览器不支持HTML5视频
+     </video>
+                                                   <!--  <div class="playBgBox">
+                                                        <img class="playBtn" src="image/play.png" alt="播放">
+                                                        <div class="playBG"></div>
+                                                    </div> -->
 								            </div>
 								            <div class="swiper-slide" data-history="3">
-								            	<embed src="https://imgcache.qq.com/tencentvideo_v1/player/TPout.swf?max_age=86400&v=20140714" type="application/x-shockwave-flash"></embed>
+								            	<video poster="https://r1.ykimg.com/05420408584A363C6A0A47047DD24931" data-config="{&quot;mediaTitle&quot;: &quot;测试视频--视频&quot;}" preload="none" style="width:100%; height: 100%;">
+            <source src="http://www.w3cschool.cc/try/demo_source/mov_bbb.mp4" type="video/mp4">
+          您的浏览器不支持HTML5视频
+     </video>
 								            </div>
 								        </div>
 								    </div>
@@ -87,13 +113,16 @@
             	</div>
             </div>
             <!-- 页面第三部分 -->
-            <div class="swiper-slide">
+            <div class="swiper-slide" style="overflow: hidden">
             	<div class="pageBG">
             		<div class="wangBG">
             			<div class="colorBG">
             				<div class="tsEnd">
-            					<img class="image8" src="image/ts01.png" alt="铁丝">
-            					<img class="image10" src="image/ts01.png" alt="铁丝">
+            					<div class="image8"></div>
+            					<div class="image10"></div>
+                                <!-- 左侧延伸铁丝 -->
+                                <div class="image21"></div>
+                                <div class="image22"></div>
             					<div class="pzBox">
             						<img class="image9" src="image/zzbg.png" alt="牌子">
             						<!-- 赞助商logo -->
@@ -109,7 +138,7 @@
             							</ul>
             						</div>
             					</div>
-            					<img class="image11" src="image/ts02.png" alt="竖铁丝">
+            					<img class="image11" src="image/ts05.png" alt="竖铁丝">
             					<img class="image12" src="image/maozi.png" alt="帽子">
             					<img class="image13" src="image/xiangzi.png" alt="箱子">
             				</div>
@@ -130,28 +159,46 @@
         <div class="swiper-button-next">SCROLL</div>
     </div>
 	<script>    
-	{
-		let swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: false,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        simulateTouch : false,
-    	});
-	}    
-	         
+        // 点击箭头左右滑动页面吧
+    	{
+    		let swiper = new Swiper('.swiper-container', {
+                pagination: '.swiper-pagination',
+                paginationClickable: false,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                simulateTouch : false,      //鼠标拖动滑动
+        	});
+    	}          
   	</script>
   	<script>
+        // 视频左右滑动
   		{
   			let swiper = new Swiper('.swiper-video', {
-            spaceBetween: 50,
-            slidesPerView: 2,
-            centeredSlides: true,
-            slideToClickedSlide: true,
-            grabCursor: true,
-            history: 'slide',
+                spaceBetween: 50,
+                slidesPerView: 2,
+                centeredSlides: true,
+                slideToClickedSlide: true,
+                grabCursor: true,
+                history: 'slide',
+                initialSlide :1,
+                loop : true
         	});
   		}
+    </script>
+    <script>
+        
+        //document.documentElement.style.overflow='hidden';
+         document.body.style.overflow='hidden';
+            zymedia('video',{autoplay: true});
+            var screenheight = window.screen.height/2;
+            $("#modelView").width(window.screen.width);
+            $("#modelView").height(window.screen.height);
+            var videoheight = $(".zy_media").height()/2;
+            var padding_top = screenheight-videoheight;
+            $(".playvideo").css({"top":padding_top});
+            $("#modelView").css({"margin-top":-1*(padding_top+$(".zy_media").height())});
+
+
     </script>
 </body>
 </body>
