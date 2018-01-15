@@ -164,7 +164,6 @@ body {
 .video .swiper-video {
   overflow: hidden;
   color: #fff;
-  height: 100%;
 }
 .video .swiper-slide {
   color: #fff;
@@ -196,6 +195,15 @@ body {
   display: block;
   margin: 0 auto;
 }
+.video .dec_play {
+  background-image: url("image/play.png");
+}
+.video .dec_play::before {
+  display: none;
+}
+.video .dec_play::after {
+  display: none;
+}
 .tsEnd {
   padding-top: 170px;
   height: 430px;
@@ -210,7 +218,7 @@ body {
   background-repeat: repeat-x;
   height: 40px;
   width: 800px;
-  left: 370px;
+  left: 340px;
 }
 .tsEnd .image10 {
   top: 424px;
@@ -219,7 +227,7 @@ body {
   background-repeat: repeat-x;
   height: 40px;
   width: 800px;
-  left: 370px;
+  left: 340px;
 }
 .tsEnd .image21 {
   top: 220px;
