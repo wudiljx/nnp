@@ -44,43 +44,53 @@ html,body{
 	height: @height100;
 	.radialGradient();
 }
-
+#content {
+  .rel();
+  z-index: 999;
+  margin: 0 auto;
+  padding: 0 0 50px;
+  max-width: 100%;
+  width: 70%;
+  height: 990px;
+}
 /* 绳子和x-m */
 .szBox{
-	height: 160px;
-	width:@width100;
 	.rel();
-	top:160px;
-	.margin();
+	top: 140px;
+	  z-index: 1;
+	  width: @width100;
+	  height: @height100;
 	.image1{
-		display: block;
-		.margin();
-		.rel();
+		background-image: url("../image/X-MUDDER.png");
+		background-repeat: no-repeat;
+		margin-left: 200px;
+		width: 850px;
+		height: 200px;
+		line-height: 200px;
 	}
 	.image2{
-		width:45%;
+		background-image: url("../image/ren.png");
+		background-repeat: no-repeat;
 		.abs();
-		bottom:-28px;
 	}
 	.image3{
-		width:50%;
+		background-image: url("../image/BURNING.png");
+		background-repeat: no-repeat;
 		.abs();
-		bottom:-32px;
-		left:50%;
 	}
 	.renImage{
 		.rel();
 		width: 100%;
 	}
 	.image4{
-		width:50%;
+		background-image: url("../image/sz06.png");
+		background-repeat: no-repeat;
 		.abs();
-		top:-224px;
-		left:20%;
 	}
 	.image5{
+		background-image: url("../image/sz07.png");
+		background-repeat: no-repeat;
 		.abs();
-		top:188px;
 	}
 	.image6{
 		.abs();
