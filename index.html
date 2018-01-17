@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="http://image.runnar.net/static/common/css/swiper.min.css">
 	<link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/zy.media.min.css">
+    <link rel="stylesheet" href="css/3d.css">
     <style>
         
     #modelView{background-color:#DDDDDD;z-index:0;opacity:0.7;height: 100%;width: 100%;position: relative;}
@@ -13,36 +14,66 @@
     .zy_media{z-index: 999999999}
 
     </style>
+
 	<script src="http://image.runnar.net/static/common/js/jquery-3.1.1.min.js"></script>
 	<script src="http://image.runnar.net/static/common/js/swiper.min.js"></script>
     <script src="js/zy.media.min.js"></script>
     <script src="js/index.js"></script>
-
 </head>
-<body class="pageBG">
-    <div class="wangBG">
-        <div class="colorBG">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <!-- 页面第一部分 -->
-                    <div class="swiper-slide">
-                        
-                        <!-- 绳子和X-M -->
-
-                        <div id="content">
-                            <div id="simple3D" class="szBox">
-                                <div class="image1"></div>
-                                <div class="image2"></div>
-                                <div class="image3"></div>
-                                <div class="image4"></div>
-                                <div class="image5"></div>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- 页面第一部分 -->
+            <div class="swiper-slide">
+                <!-- 绳子和X-M -->
+                <div class="slider" id="slider">
+                     <div class="slider__content" id="slider-content">
+                        <div class="pageBG">
+                            <div class="wangBG">
+                                <div class="colorBG">
+                                    <div class="slider__images">
+                                        <div class="slider__images-item slider__images-item--active">
+                                            <img class="image5" src="image/BURNING.png" alt="">
+                                            <img src="" alt="">
+                                            <div class="imagesBox">
+                                                <img src="" alt="">
+                                                <img class="image2" src="image/X-MUDDER.png" alt="">
+                                                <img class="image3" src="image/sz06.png" alt="">
+                                                <img src="" alt="">
+                                                <img class="image7" src="image/reg.png" alt="">
+                                                <img src="" alt="">
+                                                <img class="image4" src="image/sz07.png" alt="">
+                                                <ul class="timeNum">
+                                                    <li>北京 <span>9月2日</span></li>
+                                                    <li>南京 <span>10月2日</span></li>
+                                                    <li>上海 <span>11月2日</span></li>
+                                                    <li>陆续开放中...</li>
+                                                </ul>
+                                            </div>  
+                                            <div class="image1Box">
+                                                <img class="image010" src="image/sz05.png" alt="">
+                                                <img src="" alt="">
+                                                <img class="image1" src="image/ren.png"/>
+                                                <img class="image6" src="image/sz2.png" alt="">
+                                                <img src="" alt="">
+                                                <img class="image008" src="image/huo2.png" alt="">
+                                                <img src="" alt="">
+                                                <img class="image009" src="image/huo1.png" alt="">
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                                
                     </div>
-                    <!-- 页面第二部分 -->
-                    <div class="swiper-slide">
-                        <div>
+                </div> 
+            </div>
+            <!-- 页面第二部分 -->
+            <div class="swiper-slide">
+                <div class="pageBG">
+                    <div class="wangBG">
+                        <div class="colorBG">
                             <!-- video -->
                             <div class="video">
                                 <div class="videoBG"><!-- <img src="image/play.png" alt="播放"> --></div>
@@ -81,65 +112,58 @@
                                 <p>We've been informed that the #MudderLeaks hacker will release newly decrypted files on our top secret obstacles every other week...</p>
                             </div>
                         </div>
-                                
                     </div>
-                    <!-- 页面第三部分 -->
-                    <div class="swiper-slide" style="overflow: hidden">
-                        
-                        <div class="tsEnd">
-                            <div class="image8"></div>
-                            <div class="image10"></div>
-                            <!-- 左侧延伸铁丝 -->
-                            <div class="image21"></div>
-                            <div class="image22"></div>
-                            <div class="pzBox">
-                                <img class="image9" src="image/zzbg.png" alt="牌子">
-                                <!-- 赞助商logo -->
-                                <div class="zz">
-                                    <img class="image14" src="image/hzpp.png" alt="合作品牌">
-                                    <ul>
-                                        <li><img class="image15" src="image/zz01.png" alt="nike"></li>
-                                        <li><img class="image16" src="image/zz02.png" alt="reebok"></li>
-                                        <li><img class="image17" src="image/zz03.png" alt="adidas"></li>
-                                        <li><img class="image18" src="image/zz04.png" alt="puma"></li>
-                                        <li><img class="image19" src="image/zz05.png" alt="TNF"></li>
-                                        <li><img class="image20" src="image/zz06.png" alt="UA"></li>
-                                    </ul>
+                </div>
+            </div>
+            <!-- 页面第三部分 -->
+            <div class="swiper-slide" style="overflow: hidden">
+                <div class="pageBG">
+                    <div class="wangBG">
+                        <div class="colorBG">
+                            <div class="tsEnd">
+                                <div class="image8"></div>
+                                <div class="image10"></div>
+                                <!-- 左侧延伸铁丝 -->
+                                <div class="image21"></div>
+                                <div class="image22"></div>
+                                <div class="pzBox">
+                                    <img class="image9" src="image/zzbg.png" alt="牌子">
+                                    <!-- 赞助商logo -->
+                                    <div class="zz">
+                                        <img class="image14" src="image/hzpp.png" alt="合作品牌">
+                                        <ul>
+                                            <li><img class="image15" src="image/zz01.png" alt="nike"></li>
+                                            <li><img class="image16" src="image/zz02.png" alt="reebok"></li>
+                                            <li><img class="image17" src="image/zz03.png" alt="adidas"></li>
+                                            <li><img class="image18" src="image/zz04.png" alt="puma"></li>
+                                            <li><img class="image19" src="image/zz05.png" alt="TNF"></li>
+                                            <li><img class="image20" src="image/zz06.png" alt="UA"></li>
+                                        </ul>
+                                    </div>
                                 </div>
+                                <img class="image11" src="image/ts05.png" alt="竖铁丝">
+                                <img class="image12" src="image/maozi.png" alt="帽子">
+                                <img class="image13" src="image/xiangzi.png" alt="箱子">
                             </div>
-                            <img class="image11" src="image/ts05.png" alt="竖铁丝">
-                            <img class="image12" src="image/maozi.png" alt="帽子">
-                            <img class="image13" src="image/xiangzi.png" alt="箱子">
-                        </div>
-                        <!-- 地址 -->
-                        <div class="dizhi">
-                            <img src="image/erweima.png" alt="二维码">
-                            <p>公司地址：北京市朝阳区朝外SOHO C座二层</p>
-                            <p>联系电话：010-58296472</p>
-                            <p>2017 X-MUDDER break all limits &copy;</p>
+                            <!-- 地址 -->
+                            <div class="dizhi">
+                                <img src="image/erweima.png" alt="二维码">
+                                <p>公司地址：北京市朝阳区朝外SOHO C座二层</p>
+                                <p>联系电话：010-58296472</p>
+                                <p>2017 X-MUDDER break all limits &copy;</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Add Navigation -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next">SCROLL</div>
             </div>
         </div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next">SCROLL</div>
     </div>
 
-    <script src="js/jquery-1.11.0.min.js"></script>
-      <script src="js/jquery.simple3D.js"></script>
-      <script>
-        $("#simple3D").simple3D({
-          moveX:1,
-          moveY:1,
-          bgImage:true,
-          targetAll:true,
-          reverseX: true,
-          reverseY: true
-        });
-      </script>
-	<script>    
+    <script src="js/3d.js"></script>
+    <script>    
         // 点击箭头左右滑动页面吧
     	{
     		let swiper = new Swiper('.swiper-container', {
